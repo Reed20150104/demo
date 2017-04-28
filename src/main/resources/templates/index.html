@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<!--Meta START-->
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<!-- Meta END-->
+<title>登录</title>
+<!--Global style START -->
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<!--Global scripts START -->
+<link href="css/login2.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/materialadmin.css" rel="stylesheet" type="text/css" />
+<!--Global scripts END -->
+</head>
+
+<body>
+<div class="login">
+	<header>
+		<div>
+			<span class="titlename"><font color="green">昆山华信</font>人力资源管理平台</span>
+		</div>
+	</header>
+	
+	<section class="unArea">
+		<div class="header">
+			<div class="switch" id="switch">
+				<a class="switch_btn_focus" id="switch_dlogin" href="javascript:void(0);" tabindex="10">帐号登陆</a>
+				<a class="switch_btn" id="switch_login" href="javascript:void(0)" tabindex="9">免费注册</a>
+				<div class="switch_bottom" id="switch_bottom" style="position: absolute; width:52px; left: 0px;"></div>
+			</div>
+		</div>
+		<!-- login-->
+		<div class="web_qr_login" id="web_qr_login" style="display: block; height:208px;">
+			<div class="web_login" id="web_login">
+				<div class="login-box">
+					<div class="login_form">
+						<ul th:if="${#fields.hasErrors('*')}">
+							<li th:each="err : ${#fields.errors('*')}" th:text="${err}"/>
+						</ul>
+						<form th:action="@{/submit}" th:object="${user}" name="loginform" id="login_form" class="loginForm" th:method="post">
+
+						<div class="uinLog" id="uinLog">
+							<label class="input-tips" for="u">工号</label>
+							<input type="text" id="u" name="work_id" class="inputstyle"/>
+								
+						</div>
+						
+						<div class="pwdArea" id="pwdArea">
+							<label class="input-tips" for="p">密码</label>
+							<input type="password" id="p" name="password" class="inputstyle"/>
+						</div>
+						<div style="margin-top:57px;">
+							<input type="submit" value="帐号登陆" class="button_green"/>
+						</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--login END -->
+		
+		<!-- register -->
+		<div class="register" id="register" style="display: none">
+			<div class="web_register">
+				<form name="form2" id="regUser" action="/register" method="post">
+					<input type="hidden" name="to" value="reg"/>
+					<input type="hidden" name="did" value="0"/>
+					<ul class="reg_form">
+					<li>
+
+						<input type="text" id="user" name="username" maxlength="16" class="inputstyle2" placeholder="姓名"/>
+					</li>
+					<li>
+
+						<input type="text" id="id_num" name="work_id" maxlength="10" class="inputstyle2" placeholder="工号(登陆帐号)"/>
+					</li>
+					<li>
+
+						<input type="text" id="phone_number" name="telephone_number" maxlength="11" class="inputstyle2" placeholder="电话号码"/>
+
+					</li>
+					<li>
+						
+						<input type="text" id="user_mail" name="mail" maxlength="15" class="inputstyle2" placeholder="邮箱"/>
+						
+					</li>
+					<li>
+						
+						<input type="password" id="passwd" name="password" maxlength="16" class="inputstyle2" placeholder="密码"/>
+						
+					</li>
+					<li>
+						
+						<input type="password" id="passwd2" name="password2" maxlength="16" class="inputstyle2" placeholder="确认密码"/>
+						
+					</li>
+					
+					</ul>
+					<div style="margin-top:50px">
+						<input type="submit" id="reg" class="button_green" value="注册"/>
+					</div>
+				</form>
+			</div>
+		
+		</div>
+		<!-- register END-->
+		
+		
+	</section>
+	
+</div>
+</body>
+
+
+</html>

@@ -1,0 +1,1 @@
+INSERT into TABLE USER (id,mail,password,telephone_number,username,work_id) VALUES (1,'935667006@qq.com','123456','15050213227','reedlu','710999');

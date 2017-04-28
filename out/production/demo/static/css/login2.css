@@ -1,0 +1,191 @@
+﻿html {
+
+}
+
+body {
+	font-family: Microsoft YaHei;
+	background-color: #E5E6E6
+}
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	/*text-decoration: none; color:#f00;*/
+}
+
+ul {
+	padding:0;
+	margin:0;
+}
+
+ul li {
+	margin-top: 20px;
+	text-align: left;
+	list-style-type: none;
+}
+
+.login {
+   
+   width:250px;
+   height: 294px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   margin: -187px 0 0 -125px;
+   /*justify-content: center;  
+   align-items: center;  */     
+   
+   text-align: center;
+     
+   
+}
+.titlename {
+	
+	font-size: 17px;
+	
+}
+
+.unArea {
+	/*margin-top: 28px;*/
+	width: 248px;
+	height: 242px;
+	margin-top: 27px;
+	background-color: #ffffff;
+	
+	font-size: 9px;
+	padding:0px;
+}
+.header {
+	height: 35px;
+	width: 248px;
+	border-bottom:1px solid #e2e2e2;
+	position: relative;
+	font-family: "Microsoft Yahei";
+	margin-top: 0px;
+	
+}
+.switch {
+   border-left: 72px;
+   border-top: 12px;
+}	
+.header .switch {
+	height: 35px;
+	position: absolute;
+	left: 65px;
+	bottom:0;
+	font-size: 9px;
+}
+
+.header .switch #switch_dlogin {
+	margin-right: 22px;
+	
+}
+.header .switch .switch_btn {
+	color: #999;
+	display: inline-block;
+	height:35px;
+	line-height: 35px;
+	outline:none;
+	*hide-focus:expression(this.hideFocus=true);
+}
+
+.header .switch .switch_btn_focus {
+	color:#080;
+	display: inline-block;
+	height: 35px;
+	line-height: 35px;
+	outline:none;
+	*hide-focus:expression(this.hideFocus=true);
+}
+
+.header .switch .switch_btn:hover {
+	color:#080;
+	text-decoration: none;
+}
+
+.header .switch .switch_btn_focus:hover {
+	text-decoration: none;
+}
+
+#switch_bottom {
+    position: absolute;
+	bottom: -1px; _bottom: -2px;
+	border-bottom: 2px solid #848484;
+}	
+
+.button_green {
+	display:inline-block;
+	width: 217px;
+	float: left;
+	background:#008B00; border:none; cursor:pointer;
+	color:#fff;
+	text-align: center;
+	margin-left: 16px;
+	margin-bottom: 41px;
+}
+
+.login_form {
+	
+	padding-left:0px;
+	padding-top: 20px;
+}
+
+.uinLog {
+    margin-right: 0px;
+    padding-right: 48px;
+    border-left-width: 16px;
+    padding-left: 5px;
+    margin-left: 0px;
+	margin-top: 4px;
+   
+}
+.pwdArea {
+	margin-right: 0px;
+    padding-right: 48px;
+    border-left-width: 16px;
+    padding-left: 5px;
+    margin-left: 0px; 
+	margin-top: 18px;
+	
+}
+.input_tips {
+	margin:0px;
+}
+.inputstyle{
+	border-top-style:none;
+	border-right-style:none;
+	border-left-style:none;
+	border-bottom-style:solid;
+}
+.web_qr_login{
+	
+}
+
+.register .web_register{
+	width: 248px;
+	height: 386px;
+	background-color:#ffffff;
+	float:left;
+}
+
+.web_register {
+	margin:0px auto;
+}
+.input-tip2 {
+   margin: 0px;
+   text-align: left;
+}
+.inputstyle2 {
+	width: 221px;
+	text-align: left;
+	display:inline-block;
+	border-top-style:none;
+	border-right-style:none;
+	border-left-style:none;
+	border-bottom-style:solid;
+}
+.formError {
+	color: red;
+	font-style: italic;
+}
